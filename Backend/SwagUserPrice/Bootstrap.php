@@ -10,6 +10,7 @@ use Shopware\SwagUserPrice\Bootstrap\Setup;
 use Shopware\SwagUserPrice\Bundle\SearchBundleDBAL\PriceHelper;
 use Shopware\SwagUserPrice\Bundle\StoreFrontBundle\Service\Core;
 use Shopware\SwagUserPrice\Subscriber;
+use Shopware\SwagUserPrice\Components;
 
 /**
  * Plugin bootstrap class.
@@ -184,6 +185,8 @@ class Shopware_Plugins_Backend_SwagUserPrice_Bootstrap extends Shopware_Componen
      */
     public function onGetCheapestPriceService()
     {
+        $this->onStartDispatch();
+
         $coreService = $this->get('shopware_storefront.cheapest_price_service');
         $validator = $this->get('swaguserprice.accessvalidator');
         $helper = $this->get('swaguserprice.servicehelper');
@@ -199,6 +202,8 @@ class Shopware_Plugins_Backend_SwagUserPrice_Bootstrap extends Shopware_Componen
      */
     public function onGetGraduatedPricesService()
     {
+        $this->onStartDispatch();
+
         $coreService = $this->get('shopware_storefront.graduated_prices_service');
         $validator = $this->get('swaguserprice.accessvalidator');
         $helper = $this->get('swaguserprice.servicehelper');

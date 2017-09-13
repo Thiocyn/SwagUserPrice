@@ -1,17 +1,18 @@
 {
     "label": {
-        "de": "Kundenspezifische Preise",
-        "en": "Customer-specific prices"
+        "de": "Kundenspezifische Preise (Bugfix: PT-7366)",
+        "en": "Customer-specific prices (Bugfix: PT-7366)"
     },
     "copyright": "(c) by shopware AG",
     "license": "MIT",
     "link": "http://store.shopware.com",
     "author": "shopware AG",
 
-    "currentVersion": "2.1.2",
+    "currentVersion": "2.1.3",
 
     "changelog": {
         "de": {
+            "2.1.3": "PT-7366 - Bugfix missing service",
             "2.1.2": "PT-7650 - 5.3 Kompatibilität und SecureUninstall Prozess hinzugefügt;",
             "2.1.1": "PT-5098 - Die Preise können wieder resettet werden; PT-5103 - Performance im Listing wurde verbessert; PT-5309 - Kunden-Paging Bug beseitigt; PT-6315 - Gruppen aktivieren und deaktivieren geht wieder;",
             "2.1.0": "PT-6068 - Feature: Shopware 5.2 Kompatibilität;",
@@ -21,6 +22,7 @@
             "1.0.3": "Korrigiert falsche Kodierung; PT-2388: Korrigiert Nutzung von SSL im Backend; PT-2552: Superglobale REQUEST Variable ersetzt; PT-2614 Korrektur: Cache-Kompatibilität"
         },
         "en": {
+            "2.1.3": "PT-7366 - Bugfix missing service",
             "2.1.2": "PT-7650 - Added 5.3 compatibility and secure uninstall process;",
             "2.1.1": "PT-5098 - Prices can be reset; PT-5103 - Performance of the listing has been improved; PT-5309 - Fix customer paging bug; PT-6315 - groups can set active and inactive again;",
             "2.1.0": "PT-6068 - Feature: Shopware 5.2 Kompatibilität;",
